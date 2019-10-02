@@ -1,0 +1,25 @@
+name	mat	type	V	T
+ak4-kone-V1	ak4	kone	8.5	20
+ak4-kone-V2	ak4	kone	15.5	20
+ak4-kone-V3	ak4	kone	22	20
+ak4-kone-V4	ak4	kone	8.5	200
+ak4-kone-V5	ak4	kone	15.5	200
+ak4-kone-V6	ak4	kone	21.5	200
+ak4-sph-V1	ak4	sph	8.5	20
+ak4-sph-V2	ak4	sph	15.5	20
+ak4-sph-V3	ak4	sph	22	20
+ak4-sph-V4	ak4	sph	7.5	200
+ak4-sph-V5	ak4	sph	15	200
+ak4-sph-V6	ak4	sph	21	200
+ak4-diam-V1	ak4	diam1	15.5	20
+ak4-diam-V2	ak4	diam1	25.5	20
+ak4-diam-V3	ak4	diam1	15	200
+ak4-diam-V4	ak4	diam1	24.5	200
+vgl-kone-V1	vgl12	kone	15	20
+vgl-sph-V1	vgl12	sph	17.7	20
+vgl-sph-V2	vgl12	sph	25	20
+vgl-diam-V1	vgl12	diam1	18	20
+vgl-diam-V2	vgl12	diam1	26	20
+vgl-diam-V3	vgl12	diam2	8.7	20
+vgl-diam-V4	vgl12	diam2	15.5	20
+
