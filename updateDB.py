@@ -10,7 +10,7 @@ outdb = odbc(os.path.abspath(kwds[2]))
 
 print('Синхронизация таблиц')
 table_names = ['ВидПоставки', 'Заказчик', 'Материал',
-               'МерныйСтержень', 'ТипЭксперимента', 'Ударник']
+               'МерныйСтержень', 'ТипЭксперимента', 'Ударник', 'МатериалЭксперимент']
 for table_name in table_names:
     print('Синхронизируется таблица', table_name)
     in_data = indb.getInfo(table_name)
@@ -26,6 +26,8 @@ for table_name in table_names:
                 d.pop('Код')
             if 'Номер'in d:
                 d.pop('Номер')
+            if 'Документация'in d:
+                d.pop('Документация')
             if d:
                 outdb.insertInfo(table_name, list(
                     d.keys()), list(d.values()))
@@ -50,5 +52,5 @@ for i, ec in enumerate(newec):
     print(ec, 'осталось', N-i-1)
     d.pop('КодОбразца')
     d.pop('Код')
-    outdb.insertInfo('Эксперимент', list(d.keys()), list(d.values()))
-print('Не забудьте обновить записи таблицы МатериалЭксперимент вручную!!!')
+    outdb.insertInfo('Эксперимент',
+                     list(d.keys()), list(d.values()))
