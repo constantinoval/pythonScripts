@@ -2,8 +2,8 @@
 from odbcAccess import expODBC
 import xlwt as xls
 
-db = expODBC(r"d:\experiments\База данных\db-work2.accdb")
-exp_code = 'c632-05'
+db = expODBC(r"D:\work\NIIM\db-work2.accdb")
+exp_code = 'c649-01'
 xls_file_name = exp_code+'.xls'
 experiment = db.getExperimentData(exp_code)
 wb = xls.Workbook()
